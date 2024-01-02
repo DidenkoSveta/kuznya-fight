@@ -1,9 +1,9 @@
 body {
    position: relative;
-   background-color: $bg-bege;
-   color: $brown;
+   background-color: $white;
+   color: $black;
    font-size: 20px;
-   font-family: "Montserrat", sans-serif;
+   font-family: 'Ubuntu', sans-serif;
    font-weight: 400;
    line-height: 126%;
    overflow-x: hidden;
@@ -19,7 +19,7 @@ section {
    }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1240px) {
    body {
       font-size: 16px;
       cursor: block;
@@ -27,9 +27,15 @@ section {
 }
 
 h2 {
-   font-family: 'Pattaya', sans-serif;
    font-size: 46px;
    font-weight: 400;
    text-align: center;
    line-height: 130%;
+}
+
+.header{
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
