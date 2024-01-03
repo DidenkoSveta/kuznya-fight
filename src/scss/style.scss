@@ -3,32 +3,29 @@
 @import "fonts";
 @import "global";
 
-.header{
-   &__container{
-      width: 100vw;
-      padding: 10px 160px;
-      display: flex;
+.header {
+   &__container {
       justify-content: space-between;
       align-items: center;
       position: relative;
    }
-   &__nav{
+   &__nav {
       width: 60%;
-      &-list{
+      &-list {
          display: flex;
          justify-content: space-between;
          align-items: center;
       }
-      &-link{
+      &-link {
          position: relative;
          color: $black;
          transition: color 0.3s ease-in-out;
       }
-      &-link:hover{
+      &-link:hover {
          color: $green-active;
       }
    }
-   &__burger{
+   &__burger {
       position: relative;
       right: 0px;
       z-index: 2000;
@@ -51,18 +48,18 @@
       width: 59px;
       display: none;
    }
-   &__contact{
+   &__contact {
       display: flex;
       flex-direction: column;
       gap: 7px;
-      &-button{
+      &-button {
          color: $black;
          font-size: 20px;
          font-weight: 600;
          display: flex;
          align-items: flex-start;
       }
-      &-button::before{
+      &-button::before {
          content: "";
          background-image: url("../images/icons/whatsap-header.svg");
          height: 26px;
@@ -71,13 +68,13 @@
          position: relative;
          margin-right: 4px;
       }
-      &-phone{
+      &-phone {
          color: $black;
          font-size: 28px;
          font-weight: 700;
       }
       &-phone:hover,
-      &-button:hover{
+      &-button:hover {
          color: $green-active;
          transition: color 0.3s ease-in-out;
          cursor: pointer;
@@ -94,6 +91,94 @@
    height: 100%;
    background: rgba(10, 10, 10, 0.5);
    z-index: 1999;
+}
+
+.promo {
+   position: relative;
+   &__background {
+      background-image: url("../images/bg/promo-bg.png");
+      background-size: cover;
+      background-position: center;
+      width: 100vw;
+      height: 700px;
+      position: absolute;
+      z-index: -1;
+   }
+   &__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   &__container-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 2;
+      height: 700px;
+      gap: 50px;
+   }
+   &__features {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 50px;
+      position: relative;
+      top: -50px;
+   }
+   &__feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 380px;
+      background-color: $white;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+      padding: 30px 20px;
+      &-title {
+         font-weight: 500;
+         font-size: 22px;
+      }
+      &-inner {
+         display: flex;
+         gap: 10px;
+      }
+   }
+}
+
+.promo__cta-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 140%;
+   color: $white;
+   width: 270px;
+   height: 70px;
+   text-transform: uppercase;
+   text-decoration: none;
+   span{
+      z-index: 2;
+   }
+}
+.cta-svg{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   fill: $green;
+}
+
+.cta-svg:hover{
+   fill: $green-active;
+}
+
+.promo__cta-button span:hover .cta-svg {
+   fill: $green-active;
 }
 
 
