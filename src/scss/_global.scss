@@ -27,6 +27,13 @@ section {
    }
 }
 
+@media (max-width: 425px) {
+   body {
+      font-size: 14px;
+      cursor: block;
+   }
+}
+
 h2 {
    font-size: 46px;
    font-weight: 400;
