@@ -20,13 +20,17 @@
          align-items: center;
       }
       &-link{
+         position: relative;
          color: $black;
+         transition: color 0.3s ease-in-out;
+      }
+      &-link:hover{
+         color: $green-active;
       }
    }
    &__burger{
-      position: absolute;
-      top: 40px;
-      right: 50px;
+      position: relative;
+      right: 0px;
       z-index: 2000;
       cursor: pointer;
       background-image: url("../images/icons/burger-menu.svg");
@@ -38,7 +42,7 @@
    &__close {
       position: absolute;
       top: 40px;
-      right: 20px;
+      right: 50px;
       z-index: 2000;
       cursor: pointer;
       background-image: url("../images/icons/burger-close.svg");
@@ -46,6 +50,38 @@
       height: 52px;
       width: 59px;
       display: none;
+   }
+   &__contact{
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      &-button{
+         color: $black;
+         font-size: 20px;
+         font-weight: 600;
+         display: flex;
+         align-items: flex-start;
+      }
+      &-button::before{
+         content: "";
+         background-image: url("../images/icons/whatsap-header.svg");
+         height: 26px;
+         width: 26px;
+         display: inline-block;
+         position: relative;
+         margin-right: 4px;
+      }
+      &-phone{
+         color: $black;
+         font-size: 28px;
+         font-weight: 700;
+      }
+      &-phone:hover,
+      &-button:hover{
+         color: $green-active;
+         transition: color 0.3s ease-in-out;
+         cursor: pointer;
+      }
    }
 }
 
