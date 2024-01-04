@@ -35,13 +35,16 @@ section {
 }
 
 h2 {
-   font-size: 46px;
+   font-size: 40px;
    font-weight: 400;
-   text-align: center;
    line-height: 130%;
+   font-family: 'Capture it';
+   letter-spacing: 0.05em;
 }
 
-.headerб .promo {
+.header,
+.promo,
+.services {
    width: 100vw;
    display: flex;
    flex-direction: column;
@@ -49,7 +52,8 @@ h2 {
 }
 
 .header__container,
-.promo__container {
+.promo__container,
+.services__container {
    width: 100vw;
    padding: 10px 160px;
    display: flex;

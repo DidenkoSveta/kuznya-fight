@@ -106,7 +106,7 @@
       position: absolute;
       z-index: -1;
    }
-   &__container{
+   &__container {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -163,11 +163,11 @@
    height: 70px;
    text-transform: uppercase;
    text-decoration: none;
-   span{
+   span {
       z-index: 2;
    }
 }
-.cta-svg{
+.cta-svg {
    position: absolute;
    top: 0;
    left: 0;
@@ -175,7 +175,7 @@
    fill: $green;
 }
 
-.cta-svg:hover{
+.cta-svg:hover {
    fill: $green-active;
 }
 
@@ -183,5 +183,117 @@
    fill: $green-active;
 }
 
+.services {
+   margin: 100px auto 50px;
+   &__container {
+      flex-direction: column;
+      gap: 60px;
+   }
+   &__inner {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+   }
+   &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 680px;
+   }
+   &__item {
+      font-size: 28px;
+      padding: 30px 0;
+      width: 100%;
+   }
+   &__schedule{
+      border: 2px solid $black;
+      border-radius: 10px;
+      padding: 13px 32px;
+      display: flex;
+      align-items: center;
+      color: $black;
+      font-size: 16px;
+      font-weight: 500;
+   }
+   &__schedule::before{
+      content: "";
+      background-image: url("../images/icons/calendar.svg");
+      height: 22px;
+      width: 22px;
+      display: inline-block;
+      position: relative;
+      margin-right: 13px;
+      background-size: contain;
+   }
+   &__schedule:hover{
+      color: $green;
+      border: 2px solid $green;
+      transition: 0.3s ease-in-out;
+   }
+   &__schedule:hover::before{
+      background-image: url("../images/icons/calendar-hover.svg");
+      transition: 0.3s ease-in-out;
+   }
+   &__item{
+      position: relative;
+      &-title{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      &-title::after{
+         content: "";
+         background-image: url('../images/icons/services-arrow.svg');
+         width: 35px;
+         height: 24px;
+         display: inline-block;
+      }
+      &-img{
+         position: absolute;
+         border-radius: 14px;
+         transform: rotate(-8deg) translateX(50%);
+         z-index: 4;
+      }
+   }
+}
+
+.services__list {
+   position: relative;
+   padding: 0;
+   list-style: none;
+   width: 100%;
+
+   li.services__item {
+      position: relative;
+      border-top: 3px solid $black;
+      border-bottom: 3px solid $black;
+      margin-top: -3px;
+      width: 100%;
+      z-index: 1;
+      transition: 0.3s ease-in-out;
+   }
+   li.services__item:hover{
+      position: relative;
+      border-top: 3px solid $green;
+      border-bottom: 3px solid $green;
+      background-color: $green;
+      color: $white;
+      z-index: 2;
+      h3{
+         transition: padding-left 0.3s ease-in-out;
+         padding-left: 50px;
+      }
+      h3.services__item-title::after{
+         content: "";
+         background-image: url('../images/icons/services-arrow-white.svg');
+         transform: rotate(180deg);
+         display: inline-block;
+         transition: 0.3s ease-in-out;
+      }
+   }
+   
+}
 
 @import "mobile";
