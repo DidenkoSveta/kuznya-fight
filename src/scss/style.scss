@@ -207,7 +207,7 @@
       padding: 30px 0;
       width: 100%;
    }
-   &__schedule{
+   &__schedule {
       border: 2px solid $black;
       border-radius: 10px;
       padding: 13px 32px;
@@ -217,7 +217,7 @@
       font-size: 16px;
       font-weight: 500;
    }
-   &__schedule::before{
+   &__schedule::before {
       content: "";
       background-image: url("../images/icons/calendar.svg");
       height: 22px;
@@ -227,34 +227,50 @@
       margin-right: 13px;
       background-size: contain;
    }
-   &__schedule:hover{
+   &__schedule:hover {
       color: $green;
       border: 2px solid $green;
       transition: 0.3s ease-in-out;
    }
-   &__schedule:hover::before{
+   &__schedule:hover::before {
       background-image: url("../images/icons/calendar-hover.svg");
       transition: 0.3s ease-in-out;
    }
-   &__item{
+   &__item {
       position: relative;
-      &-title{
+      &-title {
          display: flex;
          justify-content: space-between;
          align-items: center;
       }
-      &-title::after{
+      &-title::after {
          content: "";
-         background-image: url('../images/icons/services-arrow.svg');
+         background-image: url("../images/icons/services-arrow.svg");
          width: 35px;
          height: 24px;
          display: inline-block;
       }
-      &-img{
+      &-img {
          position: absolute;
          border-radius: 14px;
-         transform: rotate(-8deg) translateX(50%);
-         z-index: 4;
+         top: 30px;
+         left: 50%;
+         transform: translate(-50%, -50%) rotate(-8deg) scale(0.25);
+         z-index: 6;
+         opacity: 0;
+         width: 50px;
+         height: 50px;
+         transition:
+            opacity 0.3s ease-in-out,
+            transform 0.3s ease-in-out,
+            width 0.3s ease-in-out,
+            height 0.3s ease-in-out;
+      }
+      &:hover .services__item-img {
+         opacity: 1;
+         width: 220px;
+         height: 220px;
+         transform: rotate(-8deg) translateX(10vw) translateY(-100px);
       }
    }
 }
@@ -274,26 +290,25 @@
       z-index: 1;
       transition: 0.3s ease-in-out;
    }
-   li.services__item:hover{
+   li.services__item:hover {
       position: relative;
       border-top: 3px solid $green;
       border-bottom: 3px solid $green;
       background-color: $green;
       color: $white;
       z-index: 2;
-      h3{
+      h3 {
          transition: padding-left 0.3s ease-in-out;
-         padding-left: 50px;
+         padding-left: 100px;
       }
-      h3.services__item-title::after{
+      h3.services__item-title::after {
          content: "";
-         background-image: url('../images/icons/services-arrow-white.svg');
+         background-image: url("../images/icons/services-arrow-white.svg");
          transform: rotate(180deg);
          display: inline-block;
          transition: 0.3s ease-in-out;
       }
    }
-   
 }
 
 @import "mobile";
