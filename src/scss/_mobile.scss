@@ -2,7 +2,8 @@
    .header__container,
    .promo__container,
    .services__container,
-   .about__container {
+   .about__container,
+   .advantages__container {
       padding: 10px 50px;
    }
 }
@@ -11,7 +12,8 @@
    .header__container,
    .promo__container,
    .services__container,
-   .about__container {
+   .about__container,
+   .advantages__container {
       padding: 10px 30px;
    }
 }
@@ -20,7 +22,8 @@
    .header__container,
    .promo__container,
    .services__container,
-   .about__container {
+   .about__container,
+   .advantages__container {
       padding: 10px 20px;
    }
 }
@@ -29,7 +32,8 @@
    .header__container,
    .promo__container,
    .services__container,
-   .about__container {
+   .about__container,
+   .advantages__container {
       padding: 10px 10px;
    }
 }
@@ -611,16 +615,94 @@
 }
 
 
+@media (max-width: 1440px) {
+   .advantages__icon{
+      width: 80px;
+   }
+}
+
+@media (max-width: 1240px) {
+   .advantages__icon{
+      width: 70px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .advantages__icon{
+      width: 60px;
+   }
+}
+
+
+@media (max-width: 1440px) {
+   .advantages__title{
+      width: 180px;
+   }
+}
+
+@media (max-width: 1240px) {
+   .advantages__title{
+      width: 160px;
+   }
+}
+@media (max-width: 1240px) {
+   .advantages__item{
+      width: 25%;
+   }
+}
+
+@media (max-width: 768px) {
+   .advantages__item{
+      width: 160px;
+   }
+}
+
+@media (max-width: 768px) {
+   .advantages__item:nth-child(2),
+   .advantages__item:nth-child(5){
+      top: 0px;
+   }
+}
+@media (max-width: 768px) {
+   .advantages__grid{
+      gap: 30px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .advantages,
+   .about{
+      margin: 130px auto 50px;
+   }
+}
+
+@media (max-width: 490px) {
+   .advantages,
+   .about{
+      margin: 30px auto 30px;
+   }
+}
+
 @media (max-width: 1040px) {
 }
 
 @media (max-width: 1040px) {
 }
+
+
 @media (max-width: 1040px) {
 }
 
 @media (max-width: 1040px) {
 }
+
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
 @media (max-width: 1040px) {
 }
 
