@@ -35,33 +35,33 @@ section {
 }
 
 h2 {
-   font-size: 40px;
+   font-size: 46px;
    font-weight: 400;
    line-height: 130%;
-   font-family: 'Capture it';
-   letter-spacing: 0.05em;
+   font-family: "Capture it";
+   letter-spacing: 0.1em;
 }
 
-@media (max-width: 1240px){
-   h2{
+@media (max-width: 1240px) {
+   h2 {
       font-size: 34px;
    }
 }
 
-@media (max-width: 1040px){
-   h2{
+@media (max-width: 1040px) {
+   h2 {
       font-size: 30px;
    }
 }
 
-@media (max-width: 768px){
-   h2{
+@media (max-width: 768px) {
+   h2 {
       font-size: 26px;
    }
 }
 
-@media (max-width: 425px){
-   h2{
+@media (max-width: 425px) {
+   h2 {
       font-size: 20px;
    }
 }
@@ -77,11 +77,19 @@ h2 {
 
 .header__container,
 .promo__container,
-.services__container {
+.services__container,
+.about__container {
    width: 100vw;
    padding: 10px 160px;
    display: flex;
    align-items: flex-start;
+}
+
+
+.promo__container,
+.services__container,
+.about__container {
+   gap: 50px;
 }
 
 .promo__title {
@@ -99,5 +107,3 @@ h2 {
       letter-spacing: 1.86px;
    }
 }
-
- 
