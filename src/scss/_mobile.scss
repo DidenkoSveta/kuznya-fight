@@ -30,6 +30,30 @@
    }
 }
 
+@media (max-width: 1440px) {
+   .services{
+      margin: 30px auto 50px;
+   }
+}
+
+@media (max-width: 1240px) {
+   .services{
+      margin: 30px auto 50px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .services{
+      margin: 10px auto 30px;
+   }
+}
+
+@media (max-width: 490px) {
+   .services{
+      margin: 0px auto 20px;
+   }
+}
+
 @media (max-width: 1040px) {
    .header__nav {
       position: fixed;
@@ -268,17 +292,16 @@
    }
 }
 @media (max-width: 1240px) {
-   .promo__feature-icon{
+   .promo__feature-icon {
       height: 50px;
    }
 }
 
 @media (max-width: 768px) {
-   .promo__feature-icon{
+   .promo__feature-icon {
       height: 40px;
    }
 }
-
 
 @media (max-width: 1240px) {
    .promo__cta-inner {
@@ -294,7 +317,7 @@
 
 @media (max-width: 1240px) {
    .cta-svg,
-   .promo__cta-button{
+   .promo__cta-button {
       width: 250px;
       height: 64px;
    }
@@ -302,66 +325,195 @@
 
 @media (max-width: 768px) {
    .cta-svg,
-   .promo__cta-button{
+   .promo__cta-button {
       width: 230px;
       height: 58px;
    }
 }
 
 @media (max-width: 1040px) {
-   .promo__feature-inner{
+   .promo__feature-inner {
       flex-direction: column;
       align-items: center;
    }
 }
 
 @media (max-width: 768px) {
-   .promo__feature-inner{
+   .promo__feature-inner {
       align-items: center;
       flex-direction: row;
    }
 }
 
 @media (max-width: 1040px) {
-   .promo__feature-description{
+   .promo__feature-description {
       text-align: center;
    }
 }
 @media (max-width: 768px) {
-   .promo__feature-description{
+   .promo__feature-description {
       text-align: left;
    }
 }
 
 @media (max-width: 425px) {
-   .promo__feature-description{
+   .promo__feature-description {
+      display: none;
+   }
+}
+
+@media (max-width: 1440px) {
+   .services__item {
+      font-size: 24px;
+   }
+}
+
+@media (max-width: 1240px) {
+   .services__item {
+      font-size: 22px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .services__item {
+      font-size: 20px;
+      padding: 22px 0;
+   }
+}
+
+@media (max-width: 490px) {
+   .services__item {
+      font-size: 16px;
+      padding: 20px 0;
+   }
+}
+
+
+@media (max-width: 1040px) {
+   .services__description {
+      width: 70%;
+   }
+}
+
+@media (max-width: 768px) {
+   .services__description {
+      width: 90%;
+      align-items: center;
+   }
+}
+
+@media (max-width: 490px) {
+   .services__description {
+      width: 100%;
+   }
+}
+
+@media (max-width: 1040px) {
+   .services__inner {
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 768px) {
+   .services__subtitle {
+      text-align: center;
+   }
+}
+
+@media (max-width: 768px) {
+   .services__inner {
+      align-items: center;
+   }
+}
+
+@media (max-width: 1240px) {
+   .services__schedule {
+      border: 2px solid $black;
+      border-radius: 10px;
+      padding: 10px 22px;
+      display: flex;
+      align-items: center;
+      color: $black;
+      font-size: 14px;
+      font-weight: 500;
+   }
+}
+
+@media (max-width: 490px) {
+   .services__schedule {
+      border: 2px solid $black;
+      border-radius: 6px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      color: $black;
+      font-size: 12px;
+   }
+}
+
+@media (max-width: 768px) {
+   .services__item-title::after {
+      width: 27px;
+      height: 19px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .services__item:hover .services__item-img{
+      width: 200px;
+      height: 200px;
+      transform: rotate(-8deg) translateX(10vw) translateY(-100px);
+   }
+}
+
+@media (max-width: 768px) {
+   .services__item-img{
       display: none;
    }
 }
 
 @media (max-width: 1040px) {
+   .services__list li.services__item:hover h3{
+      padding-left: 50px;
+   }
 }
-@media (max-width: 1040px) {
+
+
+@media (max-width: 490px) {
+   .services__list li.services__item:hover h3{
+      padding-left: 20px;
+   }
 }
+
+@media (max-width: 768px) {
+   .services__list li.services__item{
+      border-top: 2px solid $black;
+      border-bottom: 2px solid $black;
+      margin-top: -2px;
+   }
+}
+
+@media (max-width: 768px) {
+   .services__list li.services__item:hover {
+      border-top: 2px solid $green;
+      border-bottom: 2px solid $green;
+   }
+}
+
+@media (max-width: 768px) {
+   .services__container{
+      gap: 40px;
+   }
+}
+
 
 @media (max-width: 1040px) {
 }
 
 @media (max-width: 1040px) {
 }
-
 @media (max-width: 1040px) {
 }
 
 @media (max-width: 1040px) {
 }
-
-@media (max-width: 1040px) {
-}
-
-@media (max-width: 1040px) {
-}
-
-@media (max-width: 1040px) {
-}
-

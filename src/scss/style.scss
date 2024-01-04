@@ -249,6 +249,8 @@
          width: 35px;
          height: 24px;
          display: inline-block;
+         background-size: contain;
+         background-repeat: no-repeat;
       }
       &-img {
          position: absolute;

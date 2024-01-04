@@ -42,6 +42,30 @@ h2 {
    letter-spacing: 0.05em;
 }
 
+@media (max-width: 1240px){
+   h2{
+      font-size: 34px;
+   }
+}
+
+@media (max-width: 1040px){
+   h2{
+      font-size: 30px;
+   }
+}
+
+@media (max-width: 768px){
+   h2{
+      font-size: 26px;
+   }
+}
+
+@media (max-width: 425px){
+   h2{
+      font-size: 20px;
+   }
+}
+
 .header,
 .promo,
 .services {
