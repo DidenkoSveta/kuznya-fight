@@ -397,6 +397,8 @@
 }
 
 .schedule {
+   margin: 150px auto 75px;
+   overflow-x: hidden;
    &__container {
       flex-direction: column;
    }

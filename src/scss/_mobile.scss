@@ -230,7 +230,13 @@
 @media (max-width: 425px) {
    .promo__background,
    .promo__container-inner {
-      height: 420px;
+      height: 500px;
+   }
+}
+
+@media (max-width: 425px) {
+   .promo__container{
+      height: 650px;
    }
 }
 
@@ -253,7 +259,7 @@
    .promo__features {
       flex-direction: row;
       gap: 3vw;
-      top: -100px;
+      top: -50px;
    }
 }
 @media (max-width: 1240px) {
@@ -511,14 +517,16 @@
 
 @media (max-width: 768px) {
    .services__container,
-   .about__container {
+   .about__container,
+   .schedule__container {
       gap: 40px;
    }
 }
 
 @media (max-width: 490px) {
    .services__container,
-   .about__container {
+   .about__container,
+   .schedule__container {
       gap: 30px;
    }
 }
@@ -671,14 +679,16 @@
 
 @media (max-width: 1040px) {
    .advantages,
-   .about {
+   .about,
+   .schedule {
       margin: 130px auto 50px;
    }
 }
 
 @media (max-width: 490px) {
    .advantages,
-   .about {
+   .about,
+   .schedule {
       margin: 30px auto 80px;
    }
 }
