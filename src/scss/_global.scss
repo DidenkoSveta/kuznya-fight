@@ -70,7 +70,8 @@ h2 {
 .header,
 .promo,
 .services,
-.advantages {
+.advantages,
+.schedule {
    width: 100vw;
    display: flex;
    flex-direction: column;
@@ -81,7 +82,8 @@ h2 {
 .promo__container,
 .services__container,
 .about__container,
-.advantages__container {
+.advantages__container,
+.schedule__container {
    width: 100vw;
    padding: 10px 160px;
    display: flex;
@@ -91,7 +93,8 @@ h2 {
 
 .promo__container,
 .services__container,
-.about__container {
+.about__container,
+.schedule__container {
    gap: 50px;
 }
 
