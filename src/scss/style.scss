@@ -365,20 +365,20 @@
    }
 }
 
-.advantages{
+.advantages {
    margin: 150px auto 75px;
-   &__container{
+   &__container {
       display: flex;
       align-items: center;
    }
-   &__grid{
+   &__grid {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       gap: 50px;
    }
-   &__item{
+   &__item {
       position: relative;
       width: 30%;
       display: flex;
@@ -387,61 +387,123 @@
       gap: 14px;
    }
    &__item:nth-child(2),
-   &__item:nth-child(5){
+   &__item:nth-child(5) {
       top: -80px;
    }
-   &__title{
+   &__title {
       width: 250px;
       text-align: center;
    }
 }
 
-.schedule{
-   &__container{
+.schedule {
+   &__container {
       flex-direction: column;
    }
-   &__table{
+   &__table {
       width: 100%;
    }
-   &__header{
-      &-row{
+   &__header {
+      &-row {
          background-color: $black;
          color: $white;
          border-radius: 10px;
          padding: 20px 30px;
       }
-      &-cell{
+      &-cell {
          text-align: left;
          padding: 20px 30px;
          text-transform: uppercase;
       }
-      &-cell:first-child{
+      &-cell:first-child {
          border-radius: 12px 0px 0px 12px;
       }
-      &-cell:last-child{
+      &-cell:last-child {
          border-radius: 0px 12px 12px 0px;
       }
    }
-   &__row:nth-child(even){
-      background-color: #F5F5F5;
+   &__row:nth-child(even) {
+      background-color: #f5f5f5;
    }
    &__cell,
-   &__cell--empty{
+   &__cell--empty {
       padding: 20px 30px;
    }
-   &__name{
+   &__name {
       font-weight: 600;
       text-transform: uppercase;
       text-decoration: underline;
    }
+   &__accordion{
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+   }
 }
 
-
-
-
-
-
-
+.accordion{
+   &__item{
+      width: 100%;
+      // overflow: hidden;
+   }
+   &__title{
+      position: relative;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: $black;
+      color: $white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      cursor: pointer;
+      &.active::after {
+         transform: rotate(180deg);
+       }
+   }
+   &__title::after{
+      content: "";
+      background-image: url("../images/icons/schedule-arrow.svg");
+      display: inline-block;
+      width: 19px;
+      height: 11px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: transform 0.3s ease;
+      transform: rotate(var(--rotate, 0deg));
+   }
+   &__title:hover{
+      background-color: darken($black, 5%);
+      
+   }
+   &__content{
+      margin-top: 6px;
+      flex-direction: column;
+      gap: 20px;
+      overflow: hidden;
+      padding: 20px;
+      background-color: #f5f5f5;
+   }
+   &__day{
+      &-name{
+         display: flex;
+         align-items: center;
+         font-weight: 400;
+         background-color: $white;
+      }
+      &-times{
+         background-color: #f5f5f5;
+         font-weight: 600;
+         margin-right: 30px;
+         padding: 6px;
+      }
+   }
+}
+.accordion__content.active {
+   display: block; // Показать содержимое
+ }
 
 
 

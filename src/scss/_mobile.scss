@@ -26,7 +26,7 @@
    .services__container,
    .about__container,
    .advantages__container,
-   .schedule__container {
+   .schedule__container{
       padding: 10px 20px;
    }
 }
@@ -684,12 +684,23 @@
 }
 
 @media (max-width: 1040px) {
+   .schedule__cell,
+   .schedule__cell--empty,
+   .schedule__header-cell {
+      padding: 16px 16px;
+   }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
+   .schedule__table{
+      display: none;
+   }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
+   .schedule__accordion{
+      display: flex;
+   }
 }
 
 @media (max-width: 1040px) {
