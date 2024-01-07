@@ -163,6 +163,7 @@
    height: 70px;
    text-transform: uppercase;
    text-decoration: none;
+   cursor: pointer;
    span {
       z-index: 2;
    }
@@ -600,13 +601,24 @@
       left: -2%;
       transform: rotate(6deg);
       border-radius: 30px;
-      height: 600px;
+      height: auto;
       position: relative;
       z-index: 1;
+      width: 50%;
+   }
+   &__container {
+      flex-direction: column;
+   }
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
    }
    &__form {
       display: flex;
       flex-direction: column;
+      width: 50%;
+      height: auto;
    }
    &__title {
       color: $white;
@@ -616,6 +628,8 @@
    }
    &__subtitle {
       color: $white;
+      max-width: 510px;
+      letter-spacing: 0.06em;
    }
    &__submit {
       background-color: transparent;
@@ -625,23 +639,102 @@
    &__textarea {
       background: none;
       padding: 10px;
-      margin-bottom: 20px;
-      height: 80px;
       border: none;
-      border-bottom: 2px solid transparent; 
+      border-bottom: 2px solid transparent;
+      width: 100%;
+      color: $white;
+      &:focus {
+         outline: none; // Убрать стандартное подчеркивание при фокусе, если есть
+      }
+   }
+   &__input-group {
+      position: relative;
+      width: 180%;
+      margin-bottom: 20px;
    }
    &__input-group::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 10px; // Или скорректируйте значение, чтобы подчеркивание располагалось под инпутом
+      bottom: 0; // Подчеркивание расположено внизу элемента
       height: 2px;
-      background-color: #FFF; // Цвет подчеркивания
-      transform: scaleX(0);
-      transition: transform 0.3s ease-in-out;
+      background-color: #f5f5f570; // Цвет подчеркивания
+      transform: scaleX(1);
    }
+   &__textarea {
+      max-width: 100%;
+      min-width: 100%;
+      max-height: 100px;
+      min-height: 80px;
+   }
+   &__input-check{
+      max-width: 320px;
+   }
+   &__checkbox-label {
+      color: #f5f5f5b4;
+      font-weight: 200;
+      padding-left: 35px;
+      width: 100%;
+      position: relative;
+      width: 100%;
+      cursor: pointer;
+      .privacy span {
+         position: relative;
+         color: #f5f5f5b4;
+         margin-left: 35px;
+      }
+      .privacy span::after {
+         content: "";
+         height: 1px;
+         background: #f5f5f5b4;
+         width: 100%;
+         position: absolute;
+         display: block;
+         margin-left: 35px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 25px;
+         height: 25px;
+         border: 1px solid #fff; 
+         background-color: transparent; 
+      }
+   }
+   &__submit-container {
+      display: flex;
+      justify-content: space-between;
+      width: 180%;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 30px;
+
+   }
+   &__checkbox {
+      opacity: 0;
+      position: absolute;
+      z-index: -1;
+      &:checked + .contact-form__checkbox-label::after {
+         content: '✔'; 
+         position: absolute;
+         left: 5px;
+         top: 0px;
+         color: $green; 
+         font-size: 26px; 
+       }
+}
+
+.contact-form__input:invalid,
+.contact-form__textarea:invalid {
+   &::after {
+      background-color: #ff0000;
+      
+   }
+}
 }
 
 @import "mobile";
