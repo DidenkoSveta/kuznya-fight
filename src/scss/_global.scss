@@ -92,21 +92,22 @@ h2 {
 .about__container,
 .advantages__container,
 .schedule__container,
-.pricing__container,
-.contact-form__container  {
+.pricing__container{
    width: 100vw;
    padding: 10px 160px;
    display: flex;
    align-items: flex-start;
 }
 
+.contact-form__container{
+   padding: 10px 160px 10px 160px;
+}
 
 .promo__container,
 .services__container,
 .about__container,
 .schedule__container,
-.pricing__container,
-.contact-form__container{
+.pricing__container{
    gap: 50px;
 }
 
