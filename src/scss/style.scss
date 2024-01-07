@@ -436,7 +436,7 @@
       text-transform: uppercase;
       text-decoration: underline;
    }
-   &__accordion{
+   &__accordion {
       width: 100%;
       display: none;
       flex-direction: column;
@@ -444,12 +444,12 @@
    }
 }
 
-.accordion{
-   &__item{
+.accordion {
+   &__item {
       width: 100%;
       // overflow: hidden;
    }
-   &__title{
+   &__title {
       position: relative;
       text-transform: uppercase;
       display: flex;
@@ -463,9 +463,9 @@
       cursor: pointer;
       &.active::after {
          transform: rotate(180deg);
-       }
+      }
    }
-   &__title::after{
+   &__title::after {
       content: "";
       background-image: url("../images/icons/schedule-arrow.svg");
       display: inline-block;
@@ -476,11 +476,10 @@
       transition: transform 0.3s ease;
       transform: rotate(var(--rotate, 0deg));
    }
-   &__title:hover{
+   &__title:hover {
       background-color: darken($black, 5%);
-      
    }
-   &__content{
+   &__content {
       margin-top: 6px;
       flex-direction: column;
       gap: 20px;
@@ -488,14 +487,14 @@
       padding: 20px;
       background-color: #f5f5f5;
    }
-   &__day{
-      &-name{
+   &__day {
+      &-name {
          display: flex;
          align-items: center;
          font-weight: 400;
          background-color: $white;
       }
-      &-times{
+      &-times {
          background-color: #f5f5f5;
          font-weight: 600;
          margin-right: 30px;
@@ -505,11 +504,144 @@
 }
 .accordion__content.active {
    display: block; // Показать содержимое
- }
+}
 
+.pricing {
+   margin: 150px auto 75px;
+   &__container {
+      flex-direction: column;
+   }
+   &__grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 60px;
+   }
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+   &__card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 6px 2px rgba(29, 31, 33, 0.1);
+      background-color: $white;
+      padding: 40px 60px 50px;
+      &-title {
+         display: flex;
+         align-items: center;
+         font-size: 32px;
+         font-family: "Capture it";
+         letter-spacing: 0.1em;
+         font-weight: 400;
+      }
+      &-price {
+         font-size: 36px;
+         font-family: "Capture it";
+         letter-spacing: 0.1em;
+         font-weight: 400;
+      }
+      &-description {
+         width: 240px;
+      }
+      &-infinity {
+         display: inline-block;
+         position: relative;
+         transform: rotate(90deg);
+         font-size: 40px;
+         vertical-align: middle;
+         padding-left: 4px;
+      }
+      &-info {
+         margin-top: 20px;
+         text-transform: uppercase;
+         font-weight: 500;
+      }
+   }
+   &__card:nth-child(1) {
+      background-color: #ff3c3d;
+      .pricing__card-title,
+      .pricing__card-description,
+      .pricing__card-price {
+         color: $white;
+      }
+   }
+}
 
+.pricing__card:nth-child(2) .pricing__card-info,
+.pricing__card:nth-child(3) .pricing__card-info {
+   color: $green-active;
+}
 
+.pricing__card:nth-child(n + 4) .pricing__card-info {
+   color: $red;
+}
 
-
+.contact-form {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   margin: 150px auto 75px;
+   &__background {
+      background-image: url("../images/bg/about-bg.png");
+      background-size: cover;
+      background-position: center;
+      width: 100vw;
+      height: 800px;
+      position: absolute;
+      overflow-x: hidden;
+      z-index: -1;
+   }
+   &__image {
+      left: -2%;
+      transform: rotate(6deg);
+      border-radius: 30px;
+      height: 600px;
+      position: relative;
+      z-index: 1;
+   }
+   &__form {
+      display: flex;
+      flex-direction: column;
+   }
+   &__title {
+      color: $white;
+      &-span {
+         color: $green;
+      }
+   }
+   &__subtitle {
+      color: $white;
+   }
+   &__submit {
+      background-color: transparent;
+      border: none;
+   }
+   &__input,
+   &__textarea {
+      background: none;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 80px;
+      border: none;
+      border-bottom: 2px solid transparent; 
+   }
+   &__input-group::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10px; // Или скорректируйте значение, чтобы подчеркивание располагалось под инпутом
+      height: 2px;
+      background-color: #FFF; // Цвет подчеркивания
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+   }
+}
 
 @import "mobile";

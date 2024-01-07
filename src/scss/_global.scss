@@ -24,14 +24,14 @@ section {
 @media (max-width: 1240px) {
    body {
       font-size: 16px;
-      cursor: block;
+      cursor: pointer;
    }
 }
 
 @media (max-width: 425px) {
    body {
       font-size: 14px;
-      cursor: block;
+      cursor: pointer;
    }
 }
 
@@ -63,6 +63,12 @@ h2 {
 
 @media (max-width: 425px) {
    h2 {
+      font-size: 24px;
+   }
+}
+
+@media (max-width: 490px) {
+   h2 {
       font-size: 20px;
    }
 }
@@ -71,7 +77,9 @@ h2 {
 .promo,
 .services,
 .advantages,
-.schedule {
+.schedule,
+.pricing,
+.contact-form {
    width: 100vw;
    display: flex;
    flex-direction: column;
@@ -83,7 +91,9 @@ h2 {
 .services__container,
 .about__container,
 .advantages__container,
-.schedule__container {
+.schedule__container,
+.pricing__container,
+.contact-form__container  {
    width: 100vw;
    padding: 10px 160px;
    display: flex;
@@ -94,7 +104,8 @@ h2 {
 .promo__container,
 .services__container,
 .about__container,
-.schedule__container {
+.schedule__container,
+.pricing__container{
    gap: 50px;
 }
 

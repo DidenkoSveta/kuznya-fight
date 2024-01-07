@@ -4,7 +4,9 @@
    .services__container,
    .about__container,
    .advantages__container,
-   .schedule__container {
+   .schedule__container,
+   .pricing__container,
+   .contact-form__container {
       padding: 10px 50px;
    }
 }
@@ -15,7 +17,9 @@
    .services__container,
    .about__container,
    .advantages__container,
-   .schedule__container {
+   .schedule__container,
+   .pricing__container,
+   .contact-form__container {
       padding: 10px 30px;
    }
 }
@@ -26,7 +30,9 @@
    .services__container,
    .about__container,
    .advantages__container,
-   .schedule__container{
+   .schedule__container,
+   .pricing__container,
+   .contact-form__container {
       padding: 10px 20px;
    }
 }
@@ -37,7 +43,9 @@
    .services__container,
    .about__container,
    .advantages__container,
-   .schedule__container {
+   .schedule__container,
+   .pricing__container,
+   .contact-form__container {
       padding: 10px 10px;
    }
 }
@@ -533,7 +541,7 @@
 
 @media (max-width: 768px) {
    .about__container {
-      align-items: center;
+      align-items: left;
    }
 }
 
@@ -680,7 +688,9 @@
 @media (max-width: 1040px) {
    .advantages,
    .about,
-   .schedule {
+   .schedule,
+   .pricing,
+   .contact-form {
       margin: 130px auto 50px;
    }
 }
@@ -688,7 +698,9 @@
 @media (max-width: 490px) {
    .advantages,
    .about,
-   .schedule {
+   .schedule,
+   .pricing,
+   .contact-form {
       margin: 30px auto 80px;
    }
 }
@@ -713,6 +725,134 @@
    }
 }
 
+@media (max-width: 1440px) {
+   .pricing__card-title{
+      font-size: 26px;
+
+   }
+}
+
+@media (max-width: 1240px) {
+   .pricing__card-title{
+      font-size: 22px;
+
+   }
+}
+
+@media (max-width: 1040px) {
+   .pricing__card-title{
+      font-size: 20px;
+
+   }
+}
+
+@media (max-width: 768px) {
+   .pricing__card-title{
+      font-size: 18px;
+
+   }
+}
+
+@media (max-width: 390px) {
+   .pricing__card-title{
+      font-size: 16px;
+
+   }
+}
+
+@media (max-width: 1240px) {
+   .pricing__card{
+      gap: 20px;
+      width: 32%;
+      padding: 40px 60px 50px;
+
+   }
+}
+
+@media (max-width: 1040px) {
+   .pricing__card{
+      gap: 10px;
+      width: 32%;
+      padding: 20px 30px 30px;
+
+   }
+}
+
+@media (max-width: 768px) {
+   .pricing__card{
+      width: 47%;
+      padding: 20px 16px 20px;
+
+   }
+}
+
+@media (max-width: 390px) {
+   .pricing__card{
+      width: 100%;
+      gap: 8px;
+
+   }
+}
+
+
+@media (max-width: 1440px) {
+   .pricing__card-infinity,
+   .pricing__card-price{
+      font-size: 32px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .pricing__card-infinity,
+   .pricing__card-price{
+      font-size: 22px;
+   }
+}
+
+
+@media (max-width: 768px) {
+   .pricing__card-infinity,
+   .pricing__card-price{
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 390px) {
+   .pricing__card-infinity,
+   .pricing__card-price{
+      font-size: 18px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .pricing__card-description{
+      width: 100%;
+   }
+}
+
+@media (max-width: 1040px) {
+   .pricing__card-info{
+      margin-top: 10px;
+   }
+}
+
+@media (max-width: 390px) {
+   .pricing__card-info{
+      margin-top: 6px;
+   }
+}
+
+@media (max-width: 768px) {
+   .pricing__grid{
+      row-gap: 26px;
+   }
+}
+
+@media (max-width: 390px) {
+   .pricing__grid{
+      row-gap: 18px;
+   }
+}
 @media (max-width: 1040px) {
 }
 
@@ -727,3 +867,34 @@
 
 @media (max-width: 1040px) {
 }
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 1040px) {
+}
+
