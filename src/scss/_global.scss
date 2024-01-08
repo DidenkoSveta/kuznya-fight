@@ -79,7 +79,8 @@ h2 {
 .advantages,
 .schedule,
 .pricing,
-.contact-form {
+.contact-form,
+.faq {
    width: 100vw;
    display: flex;
    flex-direction: column;
@@ -92,7 +93,8 @@ h2 {
 .about__container,
 .advantages__container,
 .schedule__container,
-.pricing__container{
+.pricing__container,
+.faq__container{
    width: 100vw;
    padding: 10px 160px;
    display: flex;

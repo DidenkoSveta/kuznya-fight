@@ -12,7 +12,8 @@
    .advantages__container,
    .schedule__container,
    .pricing__container,
-   .contact-form__container {
+   .contact-form__container,
+   .faq__container {
       padding: 10px 50px;
    }
 }
@@ -25,7 +26,8 @@
    .advantages__container,
    .schedule__container,
    .pricing__container,
-   .contact-form__container {
+   .contact-form__container,
+   .faq__container {
       padding: 10px 30px;
    }
 }
@@ -38,7 +40,8 @@
    .advantages__container,
    .schedule__container,
    .pricing__container,
-   .contact-form__container {
+   .contact-form__container,
+   .faq__container {
       padding: 10px 20px;
    }
 }
@@ -51,7 +54,8 @@
    .advantages__container,
    .schedule__container,
    .pricing__container,
-   .contact-form__container {
+   .contact-form__container,
+   .faq__container {
       padding: 10px 10px;
    }
 }
@@ -859,6 +863,7 @@
       align-items: center;
       height: auto;
       overflow: hidden;
+      padding-bottom: 60px;
    }
 }
 
@@ -872,6 +877,12 @@
 @media (max-width: 1000px) {
    .contact-form__title{
       padding-top: 40px;
+   }
+}
+
+@media (max-width: 1440px) {
+   .contact-form__image{
+      width: 50%;
    }
 }
 
@@ -894,6 +905,9 @@
 }
 
 @media (max-width: 1040px) {
+   .contact-form__content {
+      margin-bottom: 20px;
+   }
 }
 
 @media (max-width: 1040px) {

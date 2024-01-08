@@ -39,6 +39,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "gsap": "^3.12.4"
+    "gsap": "^3.12.4",
+    "lightbox2": "^2.11.4"
   }
 }
