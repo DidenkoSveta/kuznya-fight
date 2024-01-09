@@ -67,7 +67,7 @@ h2 {
    }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 340px) {
    h2 {
       font-size: 20px;
    }
@@ -80,7 +80,9 @@ h2 {
 .schedule,
 .pricing,
 .contact-form,
-.faq {
+.faq,
+.footer,
+.contact  {
    width: 100vw;
    display: flex;
    flex-direction: column;
@@ -94,14 +96,16 @@ h2 {
 .advantages__container,
 .schedule__container,
 .pricing__container,
-.faq__container{
+.faq__container,
+.footer__container,
+.contact__container {
    width: 100vw;
    padding: 10px 160px;
    display: flex;
    align-items: flex-start;
 }
 
-.contact-form__container{
+.contact-form__container {
    padding: 10px 160px 10px 160px;
 }
 

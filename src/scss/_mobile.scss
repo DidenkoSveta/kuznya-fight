@@ -13,7 +13,9 @@
    .schedule__container,
    .pricing__container,
    .contact-form__container,
-   .faq__container {
+   .faq__container,
+   .footer__container,
+   .contact__container  {
       padding: 10px 50px;
    }
 }
@@ -27,7 +29,9 @@
    .schedule__container,
    .pricing__container,
    .contact-form__container,
-   .faq__container {
+   .faq__container,
+   .footer__container,
+   .contact__container  {
       padding: 10px 30px;
    }
 }
@@ -41,11 +45,12 @@
    .schedule__container,
    .pricing__container,
    .contact-form__container,
-   .faq__container {
+   .faq__container,
+   .footer__container,
+   .contact__container {
       padding: 10px 20px;
    }
 }
-
 @media (max-width: 425px) {
    .header__container,
    .promo__container,
@@ -55,31 +60,41 @@
    .schedule__container,
    .pricing__container,
    .contact-form__container,
-   .faq__container {
+   .faq__container,
+   .footer__container,
+   .contact__container {
       padding: 10px 10px;
    }
 }
 
 @media (max-width: 1440px) {
-   .services {
+   .services,
+   .faq,
+   .contact {
       margin: 30px auto 50px;
    }
 }
 
 @media (max-width: 1240px) {
-   .services {
+   .services,
+   .faq,
+   .contact {
       margin: 30px auto 50px;
    }
 }
 
 @media (max-width: 1040px) {
-   .services {
+   .services,
+   .faq,
+   .contact {
       margin: 10px auto 30px;
    }
 }
 
 @media (max-width: 490px) {
-   .services {
+   .services,
+   .faq,
+   .contact {
       margin: 0px auto 20px;
    }
 }
@@ -855,9 +870,8 @@
    }
 }
 
-
 @media (max-width: 1000px) {
-   .contact-form{
+   .contact-form {
       flex-direction: column-reverse;
       gap: 60px;
       align-items: center;
@@ -868,38 +882,37 @@
 }
 
 @media (max-width: 1000px) {
-   .contact-form__background{
+   .contact-form__background {
       height: 1160px;
    }
 }
 
-
 @media (max-width: 1000px) {
-   .contact-form__title{
+   .contact-form__title {
       padding-top: 40px;
    }
 }
 
 @media (max-width: 1440px) {
-   .contact-form__image{
+   .contact-form__image {
       width: 50%;
    }
 }
 
 @media (max-width: 1000px) {
-   .contact-form__image{
+   .contact-form__image {
       width: 65%;
    }
 }
 
 @media (max-width: 490px) {
-   .contact-form__image{
+   .contact-form__image {
       width: 80%;
    }
 }
 
 @media (max-width: 490px) {
-   .contact-form__subtitle{
+   .contact-form__subtitle {
       max-width: 100%;
    }
 }
@@ -910,10 +923,39 @@
    }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1240px) {
+   .faq__question {
+      padding: 26px 0;
+      font-size: 22px;
+   }
 }
 
 @media (max-width: 1040px) {
+   .faq__question {
+      padding: 20px 0;
+      width: 100%;
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .faq__question {
+      font-size: 18px;
+   }
+}
+
+@media (max-width: 490px) {
+   .faq__question {
+      padding: 16px 0;
+      width: 100%;
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .faq__answer {
+      width: 100%;
+   }
 }
 
 @media (max-width: 1040px) {
