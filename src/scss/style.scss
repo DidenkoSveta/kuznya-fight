@@ -734,7 +734,7 @@
 }
 
 .faq {
-   margin: 150px auto 75px;
+   margin: 180px auto 130px;
    &__container {
       flex-direction: column;
       gap: 50px;
@@ -785,6 +785,11 @@
          justify-content: center;
       }
    }
+   &__button-container{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+   }
 }
 
 .faq__answer {
@@ -830,11 +835,111 @@
    }
 }
 
-.footer{
-
+.contact {
+   overflow: hidden;
+   position: relative;
+   flex-direction: column;
+   &__container{
+      flex-direction: column;
+      height: 860px;
+      width: 100vw;
+      &-info{
+         display: flex;
+         flex-direction: column;
+         margin-top: 5%;
+         gap: 20px;
+         position: relative;
+         color: $gray;
+         width: 50%;
+         z-index: 3;
+         height: 100%;
+         font-weight: 300;
+         a{
+            color: $white;
+         }
+      }
+   }
+   &__title {
+      color: $green;
+      margin-bottom: 30px;
+      &-span{
+         color: $white;
+      }
+   }
+   &__background{
+      background-image: url("../images/bg/contact-bg.png");
+      background-size: cover;
+      background-position: right;
+      height: 860px;
+      width: 50%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      overflow-x: hidden;
+      z-index: 2;      
+   }
+   &__map{
+      height: 860px;
+      width: 60%;
+      right: -1%;
+      top: 0;
+      position: absolute;
+      overflow-x: hidden;
+      z-index: 1;  
+      div iframe{
+         overflow: hidden;
+         width: 100%;
+         height: 860px;
+         border: none;
+      }        
+   }
+   &__cta{
+      position: relative;
+      margin-top: 30px;
+   }
+   &__phone,
+   &__email{
+      font-size: 26px;
+      font-weight: 400;
+   }
+   &__phone:hover,
+   &__email:hover{
+      color: $green-active;
+      transition: color 0.3s ease-in-out;
+   }
+   &__social-links{
+      display: flex;
+      width: 240px;
+      justify-content: space-between;
+      margin-top: 10px;
+   }
 }
 
-
+.footer{
+   position: absolute;
+   bottom: 30px;
+   left: 0;
+   z-index: 10;
+   display: flex;
+   align-items: flex-start;
+   width: 100vw;
+   &__container{
+      flex-wrap: wrap;
+      position: relative;
+      gap: 20px;
+      width: 40%;
+      padding-right: 0;
+   }
+   a{
+      color: $gray;
+      font-size: 16px;
+      cursor: pointer;
+   }
+   a:hover{
+      color: $green-active;
+      transition: color 0.3s ease-in-out;
+   }
+}
 
 
 

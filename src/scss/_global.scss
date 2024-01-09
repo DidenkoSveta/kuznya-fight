@@ -36,7 +36,7 @@ section {
 }
 
 h2 {
-   font-size: 46px;
+   font-size: 50px;
    font-weight: 400;
    line-height: 130%;
    font-family: "Capture it";
@@ -45,25 +45,25 @@ h2 {
 
 @media (max-width: 1240px) {
    h2 {
-      font-size: 34px;
+      font-size: 40px;
    }
 }
 
 @media (max-width: 1040px) {
    h2 {
-      font-size: 30px;
+      font-size: 32px;
    }
 }
 
 @media (max-width: 768px) {
    h2 {
-      font-size: 26px;
+      font-size: 30px;
    }
 }
 
 @media (max-width: 425px) {
    h2 {
-      font-size: 24px;
+      font-size: 26px;
    }
 }
 
@@ -97,12 +97,14 @@ h2 {
 .schedule__container,
 .pricing__container,
 .faq__container,
-.footer__container,
-.contact__container {
+.footer__container{
    width: 100vw;
    padding: 10px 160px;
    display: flex;
    align-items: flex-start;
+}
+.contact__container {
+   padding: 10px 160px 0;
 }
 
 .contact-form__container {
