@@ -20,6 +20,7 @@
          position: relative;
          color: $black;
          transition: color 0.3s ease-in-out;
+         font-weight: 500;
       }
       &-link:hover {
          color: $green-active;
@@ -913,6 +914,11 @@
       justify-content: space-between;
       margin-top: 10px;
    }
+   &__link:hover{
+      transform: scale(1.1);
+      transition: transorm 0.3s ease-in-out, opacity 0.3 ease-in-out;
+      opacity: 0.8;
+   }
 }
 
 .footer{
@@ -940,9 +946,6 @@
       transition: color 0.3s ease-in-out;
    }
 }
-
-
-
 
 
 
