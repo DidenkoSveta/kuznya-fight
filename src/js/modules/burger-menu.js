@@ -32,14 +32,22 @@ export default function burgerMenu() {
   // Обработчик для ссылок меню
   menuLinks.forEach(link => {
     link.addEventListener('click', (event) => {
-      event.preventDefault();
-      closeMenu();
+      // Получаем атрибут href и проверяем, что он не null
+      const href = link.getAttribute('href');
+      if (href && (href.startsWith('#') || (href.includes('index.html#') && location.pathname === '/index.html'))) {
+        event.preventDefault();
+        closeMenu();
 
-      // Плавная прокрутка к соответствующему блоку
-      const targetId = link.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Плавная прокрутка к соответствующему блоку, убедитесь, что селектор правильный
+        const targetElement = document.querySelector(href.includes('#') ? href.substring(href.indexOf('#')) : 'body');
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        // Если href не определен или не содержит якорь, просто закрываем меню
+        if (!href || !href.includes('#')) {
+          closeMenu();
+        }
       }
     });
   });
