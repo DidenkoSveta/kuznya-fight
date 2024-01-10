@@ -23,7 +23,7 @@ export default function scroll() {
 
   // Обработчик прокрутки страницы
   window.addEventListener('scroll', () => {
-    const advantagesSection = document.querySelector('.services');
+    const advantagesSection = document.querySelector('.scrolling');
     const sectionTop = advantagesSection.getBoundingClientRect().top;
     if (window.pageYOffset > window.innerHeight) {
       scrollButton.style.display = 'block'; // Показать кнопку

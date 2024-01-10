@@ -3,6 +3,11 @@ import gsap from 'gsap';
 export default function contactForm() {
   const contactForm = document.querySelector('.contact-form__form');
 
+  // Проверяем, существует ли форма на странице
+  if (!contactForm) {
+    return; // Если формы нет, прекращаем выполнение функции
+  }
+
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -33,5 +38,4 @@ export default function contactForm() {
     // Очистить форму
     this.reset();
   });
-
 }
