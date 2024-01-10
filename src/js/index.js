@@ -6,6 +6,8 @@ import schedule from './modules/schedule';
 import initFAQAccordion from './modules/faqAccordion';
 import modal from './modules/modal';
 import scroll from './modules/scroll-to-top';
+import contactForm from './modules/contact-form';
+import animations from './modules/animations';
 
 // Использование функций после полной загрузки DOM
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,4 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQAccordion();
   modal();
   scroll();
+  contactForm();
+  animations();
 });

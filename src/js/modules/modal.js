@@ -42,5 +42,6 @@ export default function modal() {
     }
     showSuccessMessage();
     toggleModal(false); // Закрытие модального окна
+    enrollmentForm.reset(); // Очистка формы
   });
 }
